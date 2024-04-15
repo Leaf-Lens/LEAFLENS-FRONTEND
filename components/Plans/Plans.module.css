@@ -1,0 +1,146 @@
+.divPlansAndServices {
+    background: #fff;
+    color: var(--main-color) !important;
+}
+
+.divPlans {
+    position: relative;
+    height: 42vh;
+}
+
+.plansHeader {
+    color: var(--light-color) !important;
+    font-weight: 700;
+    font-size: 25px;
+    position: absolute;
+    top: -55px;
+    left: 47%;
+}
+
+.plans {
+    position: absolute;
+    top: -80px;
+    color: #fff;
+    width: 100%;
+}
+
+.plansDeck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.plansCardDark,
+.plansCardLeft,
+.plansCardRight {
+    width: 400px;
+    height: 380px;
+    border-radius: 30px;
+    background: var(--lighter-color);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    line-height: normal;
+    padding: 40px;
+    box-shadow: 0px 0px 15px #12121360;
+}
+
+.plansCard {
+    background: var(--lighter-color);
+}
+
+.plansCardDark {
+    background: var(--sub-color);
+    height: 440px;
+    z-index: 200;
+}
+
+.plansCardLeft {
+    margin-right: -40px;
+}
+
+.plansCardRight {
+    margin-left: -40px;
+}
+
+.plansCardTitle {
+    font-weight: 700;
+    font-size: 35px;
+    padding: 0 40px;
+    text-shadow: 0px 0px 75px #babaddf4;
+}
+
+.plansCardBadge {
+    margin: 20px auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background: var(--main-color);
+    font-weight: 700;
+}
+
+.plansCardBadgeShadow {
+    background: var(--light-color);
+    border: none;
+    color: #fff;
+}
+
+.plansCardDescription {
+    color: var(--darker-color);
+    font-weight: 600;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.plansCardDescriptionDark {
+    color: var(--lighter-color);
+    font-weight: 600;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.plansMotto {
+    margin: 0 auto;
+    text-align: center;
+    top: 200px;
+    font-size: 30px;
+    font-weight: 800;
+    width: 60%;
+    color: var(--sub-color)
+}
+
+.plansHeader2 {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 25px;
+    color: var(--black-color);
+    font-weight: 800;
+}
+
+.servicesDeck {
+    width: 85%;
+    margin: auto;
+}
+
+.servicesCard {
+    height: 300px;
+    margin: auto;
+    width: 300px;
+    padding: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+
+.serviceHeader {
+    font-weight: 800;
+    color: #475E58;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.serviceList {
+    color: #475E58;
+}
