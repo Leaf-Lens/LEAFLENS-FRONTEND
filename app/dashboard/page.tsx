@@ -3,7 +3,7 @@ import NavMenu from '@/components/NavMenu/NavMenu'
 import styles from './dashboard.module.css'
 
 const page = () => {
-    const subscription = "Tier 1"
+    const subscription = "Tier 2"
     return (
         <div>
             <NavMenu />
