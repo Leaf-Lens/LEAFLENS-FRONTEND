@@ -1,3 +1,7 @@
-.navBar{
-    background:var(--main-color)
+.navBar {
+    background: var(--main-color)
+}
+
+.searchBar {
+    background: transparent;
 }
