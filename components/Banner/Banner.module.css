@@ -1,12 +1,20 @@
 .mainContent {
   background: #5353A4;
   color: #fff;
+  padding: 120px;
+  width: 100%;
   height: 90vh;
+}
+
+.divHeaderMain {
+  position: relative;
+  width: 100%;
+  height: 500px;
 }
 
 .loginBtn {
   width: 120px;
-  position:absolute;
+  position: absolute;
   z-index: 30;
 }
 
@@ -21,24 +29,25 @@
   margin-top: 40px;
 }
 
-.header1 {
-  font-size: 16pt !important;
+.header1,
+.header2 {
+  font-size: 20px;
   font-weight: 600;
   font-style: italic;
   color: #B7B9DD;
 }
 
-.header2 {
-  font-size: 14pt !important;
+/* .header2 {
+  font-size: 18px;
   font-weight: 600;
   font-style: italic;
   color: #B7B9DD;
-}
+} */
 
 .headerMain,
 .subHeaderMain {
   font-weight: 700;
-  font-size: 90px;
+  font-size: 100px;
   text-shadow: 0px 2px 55px #babaddd4;
 }
 
@@ -53,28 +62,243 @@
 
 .subDescription {
   font-weight: 500;
+  width: 65%;
   font-size: 25px;
 }
 
-.divHeaderMain {
-  position: relative;
+
+@media only screen and (min-height:500px) {
+  .mainContent {
+    height: 110vh;
+  }
 }
 
-.headerImg {
-  position: absolute;
-  right: -10px;
-  top: -195px;
-  width: 800px;
-  height: 800px;
-  z-index:10;
+@media only screen and (min-height:600px) {
+  .mainContent {
+    height: 100vh;
+  }
 }
 
-.headerImg2 {
-  position: absolute;
-  right: 10px;
-  top: 20px;
-  width: 450px;
-  height: 550px;
-  z-index:20;
+@media only screen and (min-height:680px) {
+  .mainContent {
+    height: 90vh;
+  }
+}
+
+@media only screen and (min-height:800px) {
+  .mainContent {
+    height: 85vh;
+  }
+}
+
+@media only screen and (min-height:850px) {
+  .mainContent {
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-width:375px) {
+
+  .mainContent {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .divHeaders {
+    text-align: center;
+    width: 100%;
+  }
+
+  .mainHeaders {
+    padding: 40px;
+    padding-bottom: 0;
+  }
+
+  .headerMain,
+  .subHeaderMain {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .subDescription,
+  .header1,
+  .header2 {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  .bannerCannabisMan {
+    width: 20%;
+  }
+
+  .headerImg {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 45%;
+    z-index: 5;
+  }
+
+  .headerImg2 {
+    position: absolute;
+    right: 20px;
+    top: 130px;
+    width: 32%;
+    z-index: 20;
+  }
+
+  .inquiryBtn {
+    width: fit-content;
+    background: #BABADD;
+    color: #5C5BA4;
+    font-size: 10px;
+    letter-spacing: 3px;
+    border-radius: 35px;
+    height: 35px;
+    margin-left: 35px;
+    padding:10px;
+    margin-top:10px;
+  }
+
+  .subDescription {
+    padding-left: 40px;
+    width: 50%;
+    font-size: 12px;
+    font-weight: 200;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .mainContent {
+    width: 100%;
+    padding: 60px;
+    margin-bottom: 30px;
+  }
+
+  .mainHeaders {
+    padding: 0;
+  }
+
+  .divHeaders {
+    text-align: left;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .headerMain,
+  .subHeaderMain {
+    font-size: 60px;
+    width: 100%;
+    text-align: left;
+
+  }
+
+  .subDescription,
+  .header1 {
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  .header2 {
+    font-size: 16px;
+  }
+
+  .divHeaders {
+    width: 80%;
+  }
+
+  .bannerCannabisMan {
+    width: 20%;
+  }
+
+  .headerImg {
+    position: absolute;
+    top: -100px;
+    right: -10px;
+    width: 50%;
+    z-index: 5;
+  }
+
+  .headerImg2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32%;
+    z-index: 20;
+  }
+
+  .inquiryBtn {
+    width: 400px;
+    background: #BABADD;
+    color: #5C5BA4;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 35px;
+    height: 50px;
+    margin-top: 40px;
+  }
+
+}
+
+@media only screen and (min-width:1280px) {
+
+  .headerMain,
+  .subHeaderMain {
+    font-size: 80px;
+    width: 100%;
+  }
+
+  .subDescription,
+  .header1 {
+    font-size: 18px;
+  }
+
+  .header2 {
+    font-size: 16px;
+  }
+
+  .headerImg {
+    width: 40%;
+  }
+
+  .headerImg2 {
+    width: 26%;
+  }
+}
+
+@media only screen and (min-width:1360px) {
+
+  .headerImg {
+    width: 40%;
+  }
+
+  .headerImg2 {
+    width: 23%;
+  }
+}
+
+@media only screen and (min-width:1920px) {
+
+  .mainContent {
+    padding: 120px;
+    height: 85vh;
+  }
+
+  .headerImg {
+    position: absolute;
+    top: -150px;
+    right: -5px;
+    width: 35%;
+    z-index: 5;
+  }
+
+  .headerImg2 {
+    position: absolute;
+    width: 20%;
+  }
 
 }

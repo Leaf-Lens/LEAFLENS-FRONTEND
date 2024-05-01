@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { getServerSession } from "next-auth";
 import SessionProvider from "./../components/SessionProvider"
+import { Providers } from "./globalredux/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,9 @@ export default async function RootLayout({
       <link rel="icon" href="/cannabis.png" sizes="any" />
       <body className={inter.className}>
         <SessionProvider session={session}>
-          {children}
+          <Providers>
+            {children}
+          </Providers>
         </SessionProvider>
       </body>
     </html>

@@ -10,7 +10,7 @@
 }
 
 .dialog1 {
-    margin-top:60px;
+    margin-top: 60px;
     background-image: linear-gradient(to bottom, #add2ca, #afd3cb, #b0d4cd, #b2d5ce, #b4d6cf, #bad9d3, #c0ddd8, #c6e0dc, #d2e6e4, #deedec, #ebf3f3, #f7fafa);
 }
 
@@ -30,6 +30,7 @@
     height: 45vh;
     margin-top: -50px;
     position: relative;
+    padding: 0 5rem;
 }
 
 .dialog2 h1 {
@@ -53,18 +54,18 @@
     right: 0;
 }
 
-.dialogDeck {
-    position: relative;
-    top: 0;
-    right: 0;
-}
-
 .dialogImg2 {
     position: absolute;
     top: 92px;
     left: -95px;
     width: 650px !important;
     height: 500px !important;
+}
+
+.dialogDeck {
+    position: relative;
+    top: 0;
+    right: 0;
 }
 
 .dialog3 {
@@ -84,13 +85,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
 }
 
 .dialogIconDeck {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .dialogIconDeck button {
@@ -100,11 +102,206 @@
 }
 
 .dialogIconDeck button svg {
-    height:26px;
-    width:auto;
+    height: 26px;
+    width: auto;
 }
 
-.dialogIconDeck p{
-    color:var(--black-color);
-    font-weight:700
+.dialogIconDeck p {
+    color: var(--black-color);
+    font-weight: 700
+}
+
+@media only screen and (min-width:300px) {
+
+    .dialog1 {
+        max-width: 100vw;
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    .dialog2 {
+        max-width: 100vw;
+        font-size: 15px;
+        padding: 0 2rem;
+        height: 100%;
+    }
+
+    .dialog2 h1 {
+        font-size: 25px;
+        width: 100%;
+        font-weight: 700;
+        color: var(--lighter-black-color);
+        line-height: 1.1;
+    }
+
+    .dialog2 p {
+        margin-top: 20px;
+        color: var(--lighter-black-color);
+        width: 100%;
+        font-size: 15px;
+        padding-bottom: 2rem;
+    }
+
+    .dialogImg {
+        display: none;
+    }
+
+    .dialog3Deck {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .dialog3Deck svg {
+        height: 30px;
+    }
+
+    .dialog3Deck p {
+        font-size: 15px;
+    }
+
+    .dialogPlain {
+        padding: 2rem;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width:1024px) {
+
+    .dialog1,
+    .dialogPlain {
+        font-size: 20px;
+        padding: 70px;
+        overflow: hidden;
+    }
+
+    .dialog2 {
+        height: 75vh;
+        position: relative;
+        padding: 0 5rem;
+    }
+
+    .dialog2 h1 {
+        font-size: 55px;
+        width: 550px;
+        font-weight: 700;
+        color: var(--lighter-black-color);
+        line-height: 1.1;
+    }
+
+    .dialog2 p {
+        margin-top: 20px;
+        color: var(--lighter-black-color);
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .dialog3 {
+        height: 45vh;
+        width: 100%;
+    }
+
+    .dialogImg {
+        width: 450px !important;
+    }
+
+    .dialogImg2 {
+        width: 550px !important;
+        height: auto !important;
+    }
+
+    .dialog3Deck {
+        padding: 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    .dialogImg {
+        display: inline-block;
+    }
+
+    .dialog3Deck {
+        width: 60%;
+    }
+
+    .dialog3Deck svg {
+        height: 50px;
+    }
+
+    .dialog3Deck p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1152px) {
+
+    .dialog1,
+    .dialogPlain {
+        font-size: 20px;
+    }
+
+    .dialog2 {
+        height: 65vh;
+    }
+
+    .dialog3 {
+        height: 45vh;
+        width: 100%;
+    }
+
+    .dialogImg {
+        width: 450px !important;
+    }
+
+    .dialogImg2 {
+        width: 550px !important;
+        height: auto !important;
+    }
+
+    .dialog3Deck {
+        width: 60%;
+    }
+
+    .dialog3Deck svg {
+        height: 50px;
+    }
+
+    .dialog3Deck p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+
+    .dialogImg {
+        width: 500px !important;
+    }
+
+    .dialogImg2 {
+        width: 600px !important;
+        height: auto !important;
+    }
+
+    .dialog3Deck svg {
+        height: 50px;
+    }
+
+    .dialog3Deck p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+
+    .dialog2 {
+        height: 45vh;
+        margin-top: -50px;
+        position: relative;
+    }
+
+    .dialog3 {
+        height: 30vh;
+    }
+
 }

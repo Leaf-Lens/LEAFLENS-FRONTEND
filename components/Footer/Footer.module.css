@@ -13,8 +13,51 @@
     font-size: 30px;
     font-weight: 700;
 }
+
 .footer p {
     color: var(--black-violet-color);
     font-size: 20px;
     font-weight: 700;
+}
+
+@media only screen and (min-width:300px) {
+
+    .footer {
+        height: 15vh;
+    }
+
+    .footer h1 {
+        color: #000;
+        font-size: 12px;
+    }
+
+    .footer p {
+        color: var(--black-violet-color);
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (min-width:1000px) {
+    .footer {
+        height: 20vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-image: linear-gradient(to top, #9b8fbd, #a398c2, #aaa0c7, #b2a9cc, #bab2d1, #c2bad6, #cac3db, #d2cbe0, #dcd5e6, #e5e0ec, #eeeaf3, #ffffff);
+    }
+    
+    .footer h1 {
+        color: #000;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .footer p {
+        color: var(--black-violet-color);
+        font-size: 20px;
+        font-weight: 700;
+    }
 }

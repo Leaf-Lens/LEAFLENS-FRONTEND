@@ -18,14 +18,15 @@ const Dialog1 = () => {
                 </p>
             </div>
 
-            <div className={`${styles.dialog2} px-20`}>
+            <div className={`${styles.dialog2}`}>
                 <h1> We create solutions for your business</h1>
                 <p>We stand out as one of the leading choices in the cannabis
                     industry. Our relentless pursuit of excellence and unmatched
                     knowledge make us the go-to option for businesses in this
                     dynamic field. With our commitment to surpassing expectations
-                    and fostering success, we're the trusted ally you need in
+                    and fostering success, we&apos;re the trusted ally you need in
                     navigating the ever-evolving cannabis business landscape.</p>
+
                 <div className={`${styles.dialogImg}`}>
                     <div className={`${styles.dialogDeck}`}>
                         <Image
@@ -62,7 +63,9 @@ const Dialog1 = () => {
 
             <div className={`${styles.dialogPlain}`}>
                 <p>
-                    "Experience the transformative power of our services for your cannabis business. With tailored solutions and industry expertise, we streamline opera-tions, boost efficiency, and drive growth. From compliance management to creative brand-ing, trust us to elevate your business to new heights in the flourishing cannabis market."
+                    &ldquo;Experience the transformative power of our services for your cannabis business. With tailored solutions and industry expertise,
+                    we streamline opera-tions, boost efficiency, and drive growth. From compliance management to creative branding, trust us to elevate your
+                    business to new heights in the flourishing cannabis market.&rdquo;
                 </p>
             </div>
 
@@ -83,7 +86,7 @@ const Dialog1 = () => {
                 </div>
                 <p>Contact Us</p>
             </div>
-            
+
         </>
     )
 }

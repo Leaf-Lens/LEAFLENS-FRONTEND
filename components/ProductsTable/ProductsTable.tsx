@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import EditIcon from '@mui/icons-material/Edit';
@@ -6,30 +8,31 @@ import { Tooltip } from '@mui/material';
 import styles from './ProductsTable.module.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
+import StoreIcon from '@mui/icons-material/Store';
+import { useRouter } from 'next/navigation'
+
+import { useDispatch } from 'react-redux';
+import { setNewProductModalIsShown } from '@/app/globalredux/features/subscription/subscriptionSlice';
 
 const ProductsTable = () => {
 
-    const handleNewProductClick = () => {
-        
-    }
-
-
-
-
-
-
-
-
-
+    const router = useRouter()
+    const dispatch = useDispatch();
 
     return (
         <div className='overflow-x-auto bg-neutral rounded-xl mb-5'>
             <div className='flex justify-between'>
                 <h1 className='m-4 font-bold mb-2'>Product List</h1>
-                <button className="btn btn-sm m-4 mb-0">
-                    New Product
-                    <AddIcon />
-                </button>
+                <div>
+                    <button className="btn btn-sm my-4 me-0 mb-0" onClick={() => { dispatch(setNewProductModalIsShown(true)) }}>
+                        New Product
+                        <AddIcon />
+                    </button>
+                    <button className="btn btn-sm m-4 ms-2 mb-0" onClick={() => router.push('/subscription/store-preview')}>
+                        Visit Store
+                        <StoreIcon />
+                    </button>
+                </div>
             </div>
             <table className='table'>
                 <thead>
@@ -37,7 +40,7 @@ const ProductsTable = () => {
                         <th>Product Name</th>
                         <th className='text-center' style={{ width: '15%' }}>Price</th>
                         <th className='text-center' style={{ width: '10%' }}>Stocks</th>
-                        <th className='text-center' style={{ width: '15%' }}></th>
+                        <th className='text-center' style={{ width: '25%' }}></th>
                     </tr>
                 </thead>
                 <tbody>

@@ -28,7 +28,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 100%;
 }
 
@@ -47,14 +46,14 @@
     box-shadow: 0px 0px 15px #12121360;
 }
 
-.plansCard {
-    background: var(--lighter-color);
-}
-
 .plansCardDark {
     background: var(--sub-color);
     height: 440px;
     z-index: 200;
+}
+
+.plansCard {
+    background: var(--lighter-color);
 }
 
 .plansCardLeft {
@@ -105,7 +104,6 @@
 .plansMotto {
     margin: 0 auto;
     text-align: center;
-    top: 200px;
     font-size: 30px;
     font-weight: 800;
     width: 60%;
@@ -128,7 +126,7 @@
 .servicesCard {
     height: 300px;
     margin: auto;
-    width: 300px;
+    width: 100%;
     padding: 40px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 5px;
@@ -143,4 +141,157 @@
 
 .serviceList {
     color: #475E58;
+}
+
+
+@media only screen and (min-width:300px) {
+
+    .plansDeck {
+        max-width: 375px;
+        overflow-x: auto;
+        margin: auto;
+    }
+
+    .plansHeader {
+        color: var(--light-color) !important;
+        font-weight: 700;
+        font-size: 25px;
+        position: absolute;
+        top: -55px;
+        left: 30%;
+    }
+
+    .plansCardTitle {
+        font-size: 25px
+    }
+
+    .plansCardLeft {
+        margin-left: 390px;
+        width: 600px;
+    }
+
+    .dialog1,
+    .dialog2 {
+        display: flex;
+        max-width: 100vw;
+        overflow-x: auto;
+    }
+
+    .plansCardLeft,
+    .plansCardRight {
+        height: 395px;
+    }
+
+    .plansCardTitle {
+        font-size: 20px;
+    }
+
+    .plansMotto {
+        margin-top: 130px;
+        font-size: 18px;
+    }
+
+    .plansHeader2 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .plansDeck {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .plansCardLeft {
+        margin-left: 0;
+        width: 400px;
+    }
+
+    .plansMotto {
+        margin-top: 120px;
+    }
+
+
+    .plansHeader {
+        left: 47%;
+    }
+
+    .plansDeck {
+        width: 90%;
+        margin: auto;
+    }
+
+    .plansCardTitle {
+        font-size: 25px
+    }
+
+    .plansCardDark,
+    .plansCardLeft,
+    .plansCardRight {
+        width: 400px;
+        height: 380px;
+        border-radius: 30px;
+        background: var(--lighter-color);
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        line-height: normal;
+        padding: 40px;
+        box-shadow: 0px 0px 15px #12121360;
+    }
+
+    .plansCardDark {
+        background: var(--sub-color);
+        height: 440px;
+        z-index: 200;
+    }
+}
+
+@media only screen and (min-width:1152px) {
+    .plansMotto {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width:1280px) and (min-height:500px) {
+    .plansMotto {
+        margin-top: 155px;
+    }
+}
+
+@media only screen and (min-width:1280px) and (min-height:760px) {
+    .plansMotto {
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (min-width:1360px) {
+    .plansMotto {
+        margin-top: 135px;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    .plansMotto {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (min-width:1680px) {
+    .plansMotto {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+        width: 60%;
+        color: var(--sub-color)
+    }
+
+    .plansHeader2 {
+        text-align: center;
+        margin: 40px auto;
+        font-size: 25px;
+        color: var(--black-color);
+        font-weight: 800;
+    }
 }

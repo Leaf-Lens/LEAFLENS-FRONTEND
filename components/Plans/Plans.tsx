@@ -4,8 +4,8 @@ import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
 
 const Plans = () => {
     return (
-        <div style={{ height: '100vh', background: '#fff' }}>
-            <div className={styles.divPlans}>
+        <div>
+            <div className={`${styles.divPlans}`}>
                 <div className={styles.plans}>
                     <div className={styles.plansDeck}>
                         <div className={styles.plansCardLeft}>
@@ -42,13 +42,13 @@ const Plans = () => {
             </div>
 
             <p className={`${styles.plansMotto}`}>
-                "Experience top-tier support at unbeatable prices,
-                saving you from payroll taxes and the hassle of managing a large team.”
+                &ldquo;Experience top-tier support at unbeatable prices,
+                saving you from payroll taxes and the hassle of managing a large team.&rdquo;
             </p>
 
             <p className={`${styles.plansHeader2}`}>WE PROVIDE THE BEST SERVICES</p>
 
-            <div className={`${styles.servicesDeck} grid grid-cols-4 gap-4`}>
+            <div className={`${styles.servicesDeck} grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 lg:gap-4`}>
                 <div className={`${styles.servicesCard}`}>
                     <SpeakerNotesIcon />
                     <h1 className={`${styles.serviceHeader}`}>Support</h1>
@@ -88,8 +88,7 @@ const Plans = () => {
                     </ul>
                 </div>
             </div>
-
-        </div>
+        </div >
     )
 }
 
